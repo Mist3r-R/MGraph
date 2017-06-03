@@ -7,4 +7,4 @@ Can be applied to graph-based projects as it provides the user with variety of m
 Can be easily extended with new graph structures by implementing several basic interfaces.
 
 The library consists of two parts: MGraph and MGraphLayout.
-Now there is only the first part as the second need a little refactoring.
+Now there is only the first part as the second needs a little refactoring.
