@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{146D6BB2-B16F-4E85-A2BE-55058601A0A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MGraph</RootNamespace>
+    <AssemblyName>MGraph</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DirectedGraph.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="Flow.cs" />
+    <Compile Include="IDirectedGraph.cs" />
+    <Compile Include="IEdge.cs" />
+    <Compile Include="IEdgeSet.cs" />
+    <Compile Include="IFlow.cs" />
+    <Compile Include="IGraph.cs" />
+    <Compile Include="IHierarchy.cs" />
+    <Compile Include="ILabledObject.cs" />
+    <Compile Include="IMutableEdgeSet.cs" />
+    <Compile Include="IMutableGraph.cs" />
+    <Compile Include="IMutableVertexAndEdgeSet.cs" />
+    <Compile Include="IMutableVertexSet.cs" />
+    <Compile Include="INode.cs" />
+    <Compile Include="IUndirectedGraph.cs" />
+    <Compile Include="IVertex.cs" />
+    <Compile Include="IVertexAndEdgeSet.cs" />
+    <Compile Include="IVertexSet.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleVertex.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="UndirectedEdge.cs" />
+    <Compile Include="UndirectedGraph.cs" />
+    <Compile Include="IMutableDirectedGraph.cs" />
+    <Compile Include="IMutableUndirectedGraph.cs" />
+    <Compile Include="IMutableFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

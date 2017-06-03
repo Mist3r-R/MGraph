@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tree.cs">
+    <Files>
+      <File FileName="IFlow.cs" Line="1" Column="1" />
+      <File FileName="Tree.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/miron/GitHub/MGraph/MGraph/testapp/Program.cs" relfile="testapp/Program.cs" line="30" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
